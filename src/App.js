@@ -6,17 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Trucks from './pages/Trucks';
 import Shipments from './pages/Shipments';
 
-// Create a basic theme
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2', // Blue
-    },
-    secondary: {
-      main: '#dc004e', // Pink
-    },
-  },
-});
+const theme = createTheme();
 
 function App() {
   return (

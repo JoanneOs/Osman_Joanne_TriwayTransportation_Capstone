@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar } from '@mui/material'; // Add Toolbar here
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import ListAltIcon from '@mui/icons-material/ListAlt';
@@ -15,20 +15,9 @@ const Sidebar = () => {
         [`& .MuiDrawer-paper`]: { width: 240, boxSizing: 'border-box' },
       }}
     >
-      <Toolbar /> {/* This pushes content below the app bar */}
+      <Toolbar /> {/* Now properly imported */}
       <List>
-        <ListItem button component={Link} to="/">
-          <ListItemIcon><DashboardIcon /></ListItemIcon>
-          <ListItemText primary="Dashboard" />
-        </ListItem>
-        <ListItem button component={Link} to="/trucks">
-          <ListItemIcon><LocalShippingIcon /></ListItemIcon>
-          <ListItemText primary="Trucks" />
-        </ListItem>
-        <ListItem button component={Link} to="/shipments">
-          <ListItemIcon><ListAltIcon /></ListItemIcon>
-          <ListItemText primary="Shipments" />
-        </ListItem>
+        {/* ... rest of your code ... */}
       </List>
     </Drawer>
   );
